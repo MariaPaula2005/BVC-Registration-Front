@@ -25,7 +25,7 @@ const StudentDashboardPage = ( ) => {
                         return;
                     }
                     console.log('Token being sent:', token);
-                    const response = await fetch('bvc-registration-back.onrender.com/api/users/me', {
+                    const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/users/me', {
                         method: 'GET',
                         headers: {
                             'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const StudentDashboardPage = ( ) => {
 
         const fetchRegisteredCourses = async (studentId, token) => {
             try {
-                const response = await fetch(`bvc-registration-back.onrender.com/api/registrations/${studentId}`, {
+                const response = await fetch(`https://bvc-registration-ycs1.onrender.com/api/registrations/${studentId}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ const StudentDashboardPage = ( ) => {
             }
     
             try {
-                const response = await fetch('bvc-registration-back.onrender.com/api/registrations/drop', {
+                const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/registrations/drop', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -137,7 +137,7 @@ const StudentDashboardPage = ( ) => {
         
                 const studentName = `${studentFirstName} ${studentLastName}`;
                 const studentEmailValue = studentEmail;
-                const response = await fetch('bvc-registration-back.onrender.com/api/messages/contact', {
+                const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/messages/contact', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',
@@ -154,7 +154,6 @@ const StudentDashboardPage = ( ) => {
         
                 if (response.ok) {
                     alert(data.success);
-                    // Optionally clear messages or handle them in the UI
                 } else {
                     alert(data.error || 'Failed to send message');
                 }

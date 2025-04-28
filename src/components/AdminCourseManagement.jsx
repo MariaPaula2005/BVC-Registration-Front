@@ -29,7 +29,7 @@ const AdminCourseManagement = ({ courses, refreshCourses }) => {
 
     const deleteHandler = async (id) => {
         try {
-            const response = await fetch(`bvc-registration-back.onrender.com/api/courses/delete/${id}`, {
+            const response = await fetch(`https://bvc-registration-ycs1.onrender.com/api/courses/delete/${id}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
             });
@@ -65,8 +65,8 @@ const AdminCourseManagement = ({ courses, refreshCourses }) => {
         console.log("Sending course data:", courseData);
 
         const endpoint = editingCourseId
-            ? `bvc-registration-back.onrender.com/api/courses/edit/${editingCourseId}`
-            : 'bvc-registration-back.onrender.com/api/courses/newcourse';
+            ? `https://bvc-registration-ycs1.onrender.com/api/courses/edit/${editingCourseId}`
+            : 'https://bvc-registration-ycs1.onrender.com/api/courses/newcourse';
         const method = editingCourseId ? 'PUT' : 'POST';
 
         try {
@@ -109,9 +109,9 @@ const AdminCourseManagement = ({ courses, refreshCourses }) => {
     };
 
     const formatDate = (date) => {
-        if (date && !isNaN(new Date(date).getTime())) {  // Check if the date is valid
+        if (date && !isNaN(new Date(date).getTime())) {  
             const d = new Date(date);
-            return d.toISOString().split('T')[0]; // Extracts the date part only
+            return d.toISOString().split('T')[0]; 
         }
         return '';
     };

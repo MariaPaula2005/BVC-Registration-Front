@@ -181,7 +181,7 @@ const SignupPage = ({setUserName, setSession, setIsAdmin, setIsLoggedIn, setIsGu
       console.log("Registering User:", newUser); 
     
       try {
-        const response = await fetch('bvc-registration-back.onrender.com/api/users/register', {
+        const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/users/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newUser),
@@ -218,7 +218,7 @@ const SignupPage = ({setUserName, setSession, setIsAdmin, setIsLoggedIn, setIsGu
 
    const adminLoginBtnFunc = async () => {
     try {
-      const response = await fetch('bvc-registration-back.onrender.com/api/users/login', {
+      const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/users/login', {
         method: 'POST', 
         headers: { 'Content-Type': 'application/json' }, 
         body: JSON.stringify({email, password }),
@@ -251,7 +251,7 @@ const SignupPage = ({setUserName, setSession, setIsAdmin, setIsLoggedIn, setIsGu
   
   const studentLoginBtnFunc = async () => { 
     try {
-      const response = await fetch('bvc-registration-back.onrender.com/api/users/login', {
+      const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/users/login', {
         method: 'POST', 
         headers: { 'Content-Type': 'application/json' }, 
         body: JSON.stringify({email, password }), 

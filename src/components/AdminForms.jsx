@@ -9,7 +9,7 @@ const AdminDashboardPage = () => {
     // Fetch messages
     const fetchMessages = async () => {
       try {
-        const response = await fetch('bvc-registration-back.onrender.com/api/messages/messages');
+        const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/messages/messages');
         if (!response.ok) {
           throw new Error('Failed to fetch messages');
         }

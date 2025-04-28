@@ -57,7 +57,7 @@ function App() {
     // Function to fetch courses
     const fetchCourses = async () => {
       try {
-        const response = await axios.get('bvc-registration-back.onrender.com/api/courses'); // Make sure the backend is running
+        const response = await axios.get('https://bvc-registration-ycs1.onrender.com/api/courses'); // Make sure the backend is running
         setCourses(response.data); // Set the courses data
       } catch (error) {
         console.error('Error fetching courses:', error);
@@ -67,7 +67,7 @@ function App() {
     // Function to fetch programs
     const fetchPrograms = async () => {
       try {
-        const response = await axios.get('bvc-registration-back.onrender.com/api/programs'); // Same for programs
+        const response = await axios.get('https://bvc-registration-ycs1.onrender.com/api/programs'); // Same for programs
         setPrograms(response.data);
       } catch (error) {
         console.error('Error fetching programs:', error);
@@ -82,7 +82,7 @@ function App() {
   }, []); 
 
   const refreshCourses = async () => {
-    const response = await fetch('bvc-registration-back.onrender.com/api/courses');
+    const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/courses');
     const updatedCourses = await response.json();
     setCourses(updatedCourses);
 };
@@ -107,7 +107,7 @@ const handleLogout = async () => {
 const handleCourseDrop = async (course) => {
   try {
       const token = localStorage.getItem('jwtToken');
-      const response = await fetch('bvc-registration-back.onrender.com/api/registrations/drop', {
+      const response = await fetch('https://bvc-registration-ycs1.onrender.com/api/registrations/drop', {
           method: 'POST', 
           headers: {
               'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ const handleCourseAdd = async (course) => {
       console.log('Token being sent:', token);
 
       // Fetch the logged-in user information
-      const userResponse = await fetch('bvc-registration-back.onrender.com/api/users/me', {
+      const userResponse = await fetch('https://bvc-registration-ycs1.onrender.com/api/users/me', {
           method: 'GET',
           headers: {
               'Content-Type': 'application/json',
@@ -156,7 +156,7 @@ const handleCourseAdd = async (course) => {
       console.log('User Data:', userData);
 
       // Add the selected course
-      const courseResponse = await fetch('bvc-registration-back.onrender.com/api/registrations/add', {
+      const courseResponse = await fetch('https://bvc-registration-ycs1.onrender.com/api/registrations/add', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
