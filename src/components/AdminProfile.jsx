@@ -30,7 +30,7 @@ const AdminProfile = () => {
                     return;
                 }
 
-                const response = await fetch('http://localhost:5000/api/users/me', {
+                const response = await fetch('bvc-registration-back.onrender.com/api/users/me', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ const AdminProfile = () => {
             /*/
             const bodyData = { firstName, lastName, email, phone, password };
 
-            const response = await fetch('http://localhost:5000/api/users/me', {
+            const response = await fetch('bvc-registration-back.onrender.com/api/users/me', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

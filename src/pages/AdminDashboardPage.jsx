@@ -22,7 +22,7 @@ const AdminDashboardPage = () => {
                 }
                 console.log('Token being sent:', token);
 
-                const response = await fetch('http://localhost:5000/api/users/me', {
+                const response = await fetch('bvc-registration-back.onrender.com/api/users/me', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

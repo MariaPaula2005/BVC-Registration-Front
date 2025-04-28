@@ -53,7 +53,7 @@ const AdminStudentList = () => {
     useEffect(() => {
         const fetchStudents = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/users/students');
+                const response = await fetch('bvc-registration-back.onrender.com/api/users/students');
                 const data = await response.json();
                 console.log('Fetched students:', data); // Log fetched data for inspection
                 setStudents(data);

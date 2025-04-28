@@ -29,7 +29,7 @@ const AdminCourseManagement = ({ courses, refreshCourses }) => {
 
     const deleteHandler = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/courses/delete/${id}`, {
+            const response = await fetch(`bvc-registration-back.onrender.com/api/courses/delete/${id}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
             });
@@ -65,8 +65,8 @@ const AdminCourseManagement = ({ courses, refreshCourses }) => {
         console.log("Sending course data:", courseData);
 
         const endpoint = editingCourseId
-            ? `http://localhost:5000/api/courses/edit/${editingCourseId}`
-            : 'http://localhost:5000/api/courses/newcourse';
+            ? `bvc-registration-back.onrender.com/api/courses/edit/${editingCourseId}`
+            : 'bvc-registration-back.onrender.com/api/courses/newcourse';
         const method = editingCourseId ? 'PUT' : 'POST';
 
         try {
