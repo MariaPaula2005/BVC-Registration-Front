@@ -1,0 +1,71 @@
+.admin-dashboard {
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-dashboard h2 {
+    font-size: 2em;
+    color: #343a40;
+    margin-bottom: 20px;  /* Adjusted margin to ensure space between title and messages */
+    text-align: center;
+  }
+  
+  .list-group {
+    margin-top: 20px;  /* Added space between title and list */
+    padding-left: 0;   /* Ensures no padding on the left */
+    max-height: 400px; /* Ensures the list is scrollable if it exceeds the limit */
+    overflow-y: auto;
+    list-style-type: none; /* Remove any default list styling */
+  }
+  
+  .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    margin-right: 0;  /* Ensures the list is aligned correctly */
+    text-align: left;  /* Ensure the text is aligned to the left */
+  }
+  
+  .list-group-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .list-group-item p {
+    margin: 0.5em 0;
+    color: #495057;
+  }
+  
+  .list-group-item strong {
+    font-weight: bold;
+  }
+  
+  .list-group-item small {
+    color: #6c757d;
+    font-size: 0.9em;
+  }
+  
+  .list-group-item .studentName,
+  .list-group-item .studentEmailValue {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Adjusting the list on smaller screens */
+  @media (max-width: 768px) {
+    .admin-dashboard {
+      width: 90%;
+      padding: 15px;
+    }
+    
+    .list-group-item {
+      padding: 12px;
+    }
+  }
+  

@@ -1,0 +1,112 @@
+.course-list-page-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.adminCourseH1 h1 {
+    margin: 0 0 20px 50px;
+    padding-bottom: 20px;
+}
+
+label{
+    margin-bottom: 6px;
+}
+
+.btn-delete{
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #343a40;
+}
+
+.btn-delete:hover{
+    background-color: #fff;
+    color: #343a40;
+    font-weight: bold;
+    border: 1px solid #343a40;
+}
+
+.btn-edit{
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #343a40;
+}
+
+.btn-edit:hover{
+    background-color: #fff;
+    color: #343a40;
+    font-weight: bold;
+    border: 1px solid #343a40;
+}
+
+.btn-newCourse{
+    position: absolute;
+    top: 65px;
+    right: 60px;
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #343a40;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+
+}
+
+.btn-newCourse:hover{
+    background-color: darkslategray;
+    color: white;
+    border: 1px solid #343a40;
+}
+
+.btn-cancel {
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #343a40;
+}
+
+.btn-cancel:hover{
+    background-color: #fff;
+    color: #343a40;
+    font-weight: bold;
+    border: 1px solid #343a40;
+}
+
+textarea{
+    width: 400px;
+    min-height: 100px;
+}
+
+.course-card-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-list-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.course-card {
+    flex: 0 0 30%;
+    margin: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.add-course-form {
+    margin-top: 20px;
+}

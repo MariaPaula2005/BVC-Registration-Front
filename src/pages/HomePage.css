@@ -1,0 +1,14 @@
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.info-home-page {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+}

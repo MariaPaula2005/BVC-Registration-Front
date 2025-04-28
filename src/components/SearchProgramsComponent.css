@@ -1,0 +1,41 @@
+.search-programs-container {
+    padding: 20px;
+    background-color: #f8f9fa; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+
+.search-programs-container h2 {
+    margin-bottom: 20px;
+}
+
+.search-programs-container input[type="text"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin: 10px;
+}
+
+.search-programs-container select {
+    width: 48%; 
+    padding: 10px; 
+    margin-right: 2%; 
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.no-programs-message {
+    margin-top: 20px; 
+    font-size: 18px; 
+    color: #6c757d; 
+}

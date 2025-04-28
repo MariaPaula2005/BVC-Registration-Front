@@ -1,0 +1,240 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.userStateBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userBtn {
+  border: none;
+  color: red;
+}
+
+.lContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+
+.sContainer{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 29em;
+  padding: 20px;
+  width: 60em;
+  gap:5em;
+  box-shadow: 2px 5px 16px 2px;
+  transition: .2s ease-in;
+}
+.sContainer:hover{
+  box-shadow: 5px 2px 16px 2px;
+}
+
+
+.imageContainer{
+  width: 33.7%;
+}
+
+.imageContainer img{
+  width: 100%;
+}
+
+.studentInfo{
+  margin-right: 20px;
+  padding: 20px;
+  height: inherit;
+  width: 28em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head p{
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.head{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.userName{
+  padding: 20px;
+}
+.userName input{
+  padding: 7px;
+  width: 20em;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid black;
+}
+.password{
+  padding: 20px;
+}
+.password input{
+  padding: 7px;
+  width: 20em;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid black;
+}
+.logInBtn button{
+  padding-right: 6em;
+  padding-left: 6em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  transition: .2s ease-in-out;
+}
+.logInBtn button:hover{
+  background-color: darkslategray;
+}
+
+
+.register p{
+  font-size: 12px;
+  margin-top: 2px;
+} 
+.register button{
+  border: none;
+  color: blue;
+  text-decoration: underline;
+}
+
+.rContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 45em;
+}
+.rsContainer{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 35em;
+  height: 48em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 18px ;
+}
+.rsContainer h3{
+  margin: 1em;
+}
+.studentFirstName p{
+  margin-bottom: -1px;
+}
+.studentFirstName input{
+  margin-bottom: 20px;
+  padding: 6px;
+}
+.studentLastName p{
+  margin-bottom: -1px;
+}
+.studentLastName input{
+  margin-bottom: 20px;
+  padding: 6px;
+}
+.studentEmail p{
+  margin-bottom: -1px;
+}
+.studentEmail input{
+  margin-bottom: 20px;
+  padding: 6px;
+}
+.studentPassword p{
+  margin-bottom: -1px;
+}
+.studentPassword input{
+  margin-bottom: 20px;
+  padding: 6px;
+}
+.studentId p{
+  margin-bottom: -1px;
+}
+.studentId input{
+  margin-bottom: 20px;
+  padding: 6px;
+}
+.studentPhone p{
+  margin-bottom: -1px;
+}
+.studentPhone input{
+  margin-bottom: 20px;
+  padding: 6px;
+}
+.logBtn button{
+  padding: 8px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border: none;
+  outline: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+.logBtn button:hover{
+  background-color: darkslategray;
+}
+
+/* Ensure general input styling is consistent */
+select {
+  margin-bottom: 20px;
+  padding: 7px;
+  display: block;
+  width: 15em;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+
+}
+
+/* Align dropdowns with other input fields */
+.programType,
+.term {
+  width: 20em;
+  padding: 7px;
+  margin-bottom: 15px;
+  margin-left: 5em;
+
+}
+
+/* Ensure the program and term dropdowns have the same spacing and padding as other inputs */
+.program,
+.term {
+  margin-bottom: 20px;
+}
+
+/* For the checkbox, adjust alignment to match other fields */
+.studentId input {
+  margin-bottom: 10px;
+  padding: 6px;
+  margin-right: 10px;
+  display: inline-block; /* Keep the checkbox inline */
+  width: auto; 
+}
+
+/* Keep checkbox label in line with other inputs */
+.studentId p {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+}
